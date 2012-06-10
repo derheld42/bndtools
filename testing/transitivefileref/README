@@ -1,0 +1,8 @@
+TO TEST non-building in eclipse
+1) cd testa; ant
+2) use Bndtools to create defaul cnf directory.
+3) Try to build eclipse with Bndtools - it will not succeed.
+
+TO TEST buliding from command line
+1) cd bndtools/testing/transitivefileref
+2) ant

@@ -1,0 +1,16 @@
+<project name="transitivefileref" default="issue386">
+<target name="issue386">
+<ant dir="testa" target="clean"/>
+<ant dir="testa"/>
+<ant dir="testb" target="clean"/>
+<ant dir="testc" target="clean"/>
+<ant dir="testb"/>
+<ant dir="testc"/>
+</target>
+
+<target name="failiffilerefnotthere">
+<ant dir="testa" target="clean"/>
+<ant dir="testb" target="clean"/>
+</target>
+
+</project>

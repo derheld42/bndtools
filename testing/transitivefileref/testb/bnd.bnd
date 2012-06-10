@@ -1,0 +1,3 @@
+-buildpath: ${project}/../testa/release/testa.jar;version=file
+Export-Package: toplevel,\
+	badlevel

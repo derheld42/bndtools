@@ -1,0 +1,46 @@
+<project name="testa" basedir="." default="compile">
+
+    <property name="build.home"    value="${basedir}/build"/>
+	
+    <!-- compilation options -->
+    <property name="compile.debug"       value="true"/>
+    <property name="compile.deprecation" value="false"/>
+    <property name="compile.optimize"    value="true"/>
+
+    <property name="src.dirname"   value="src" />
+    <property name="src.home"      value="${basedir}/${src.dirname}"/>
+    	
+	<property name="dist.dirname"  value="release" />
+    <property name="dist.home"     value="${basedir}/${dist.dirname}"/>
+    <property name="jar.file"      value="${dist.home}/${ant.project.name}.jar" />    
+	
+	<path id="testa.classpath">
+	</path>
+	
+		<target name="compile">
+			<mkdir dir="${build.home}/classes"/>
+			<javac srcdir="${src.home}"
+		          destdir="${build.home}/classes"
+		            debug="${compile.debug}"
+		      deprecation="${compile.deprecation}"
+		         optimize="${compile.optimize}"
+			  includeantruntime="false">
+	            <classpath refid="${ant.project.name}.classpath"/>
+		    </javac>
+			
+			<mkdir dir="${basedir}/resources" />
+					
+			<!-- Generate and copy jar(s) -->
+		    <jar jarfile="${jar.file}">
+			  	<fileset dir="${build.home}/classes" />
+			  	<fileset dir="${basedir}/resources" />
+			</jar>
+
+		</target>
+
+  <target name="clean">
+
+    <delete dir="${build.home}/classes"/>
+    <delete dir="${dist.home}"/>
+  </target>
+</project>
