@@ -1,0 +1,5 @@
+Private-Package: leafnode
+-buildpath: base.a;version=latest,\
+	base.b;version=latest,\
+	path1;version=latest,\
+	path2;version=latest

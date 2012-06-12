@@ -1,0 +1,3 @@
+-buildpath: base.a;version=latest,\
+	base.b;version=latest
+Export-Package: path1
