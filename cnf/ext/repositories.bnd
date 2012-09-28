@@ -1,5 +1,7 @@
 ## Plugin Locations
--pluginpath: ${workspace}/cnf/plugins/biz.aQute.repository/biz.aQute.repository-2.1.0.jar
+#-pluginpath: ${workspace}/cnf/plugins/biz.aQute.repository/biz.aQute.repository-2.1.0.jar
+#[cs] use latest from bnd/dist
+-pluginpath: ${workspace}/../bnd/dist/bundles/biz.aQute.repository/biz.aQute.repository-latest.jar
 
 ## Eclipse SDK 3.7.2
 #eclipse-repo: aQute.bnd.deployer.repository.FixedIndexedRepo; \
