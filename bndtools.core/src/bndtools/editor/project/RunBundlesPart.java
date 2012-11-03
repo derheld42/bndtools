@@ -3,7 +3,6 @@ package bndtools.editor.project;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.jface.fieldassist.ControlDecoration;
 import org.eclipse.jface.fieldassist.FieldDecorationRegistry;
@@ -17,14 +16,12 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.forms.IFormPart;
 import org.eclipse.ui.forms.IManagedForm;
-import org.eclipse.ui.forms.editor.IFormPage;
 import org.eclipse.ui.forms.events.HyperlinkAdapter;
 import org.eclipse.ui.forms.events.HyperlinkEvent;
 import org.eclipse.ui.forms.widgets.FormText;
 import org.eclipse.ui.forms.widgets.FormToolkit;
 import org.eclipse.ui.forms.widgets.Section;
 import org.eclipse.ui.ide.IDE;
-import org.eclipse.ui.ide.ResourceUtil;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 
 import aQute.bnd.build.Project;
@@ -56,13 +53,13 @@ public class RunBundlesPart extends RepositoryBundleSelectionPart {
     public void initialize(IManagedForm form) {
         super.initialize(form);
 
-        IFormPage page = (IFormPage) form.getContainer();
-        IFile file = ResourceUtil.getFile(page.getEditorInput());
-        if (file != null) {
-            if (Project.BNDFILE.equals(file.getName())) {
-                loadBuilders(file.getProject());
-            }
-        }
+        //        IFormPage page = (IFormPage) form.getContainer();
+        //        IFile file = ResourceUtil.getFile(page.getEditorInput());
+        //        if (file != null) {
+        //            if (Project.BNDFILE.equals(file.getName())) {
+        //                loadBuilders(file.getProject());
+        //            }
+        //        }
     }
 
     private void loadBuilders(IProject project) {
