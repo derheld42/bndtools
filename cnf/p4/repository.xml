@@ -1,0 +1,545 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type='text/xsl' href='http://www.osgi.org/www/obr2html.xsl'?>
+
+<repository lastmodified='20121027214302.485' name='Untitled'>
+  <resource id='com.perforce.p4api/2012.1.470464' presentationname='Perforce Client API' symbolicname='com.perforce.p4api' uri='com.perforce.p4api_2012.1.470464/com.perforce.p4api_2012.1.470464.jar' version='2012.1.470464'>
+    <size>
+      10139
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Perforce Client API'/>
+      <p n='symbolicname' v='com.perforce.p4api'/>
+      <p n='version' t='version' v='2012.1.470464'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4api'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.core.runtime)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.core.runtime; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.ui)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.ui; 0.0.0
+    </require>
+    <require extend='false' filter='(|(ee=J2SE-1.5))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=J2SE-1.5))
+    </require>
+  </resource>
+  <resource id='com.perforce.team.branding/2012.1.470464' presentationname='Perforce SCM Support' symbolicname='com.perforce.team.branding' uri='com.perforce.team.branding_2012.1.470464/com.perforce.team.branding_2012.1.470464.jar' version='2012.1.470464'>
+    <size>
+      10612
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Perforce SCM Support'/>
+      <p n='symbolicname' v='com.perforce.team.branding'/>
+      <p n='version' t='version' v='2012.1.470464'/>
+    </capability>
+  </resource>
+  <resource id='com.perforce.team.core/2012.1.470464' presentationname='Perforce Team Provider Core' symbolicname='com.perforce.team.core' uri='com.perforce.team.core_2012.1.470464/com.perforce.team.core_2012.1.470464.jar' version='2012.1.470464'>
+    <size>
+      1312760
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Perforce Team Provider Core'/>
+      <p n='symbolicname' v='com.perforce.team.core'/>
+      <p n='version' t='version' v='2012.1.470464'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.admin'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.client'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.core'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.core.file'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.exception'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.impl.generic.admin'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.impl.generic.client'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.impl.generic.core'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.impl.generic.core.file'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.impl.generic.sys'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.impl.mapbased'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.impl.mapbased.client'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.impl.mapbased.rpc'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.impl.mapbased.rpc.connection'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.impl.mapbased.rpc.func'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.impl.mapbased.rpc.func.client'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.impl.mapbased.rpc.func.helper'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.impl.mapbased.rpc.func.proto'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.impl.mapbased.rpc.func.user'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.impl.mapbased.rpc.msg'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.impl.mapbased.rpc.packet'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.impl.mapbased.rpc.packet.helper'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.impl.mapbased.rpc.stream'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.impl.mapbased.rpc.sys'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.impl.mapbased.rpc.sys.helper'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.impl.mapbased.server'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.option'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.option.changelist'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.option.client'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.option.server'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.server'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.p4java.server.callback'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.core'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.core.extensions'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.core.map'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.core.p4java'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.core.p4java.builder'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.core.p4java.synchronize'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.lang3'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.lang3.builder'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.lang3.concurrent'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.lang3.event'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.lang3.exception'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.lang3.math'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.lang3.mutable'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.lang3.reflect'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.lang3.text'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.lang3.text.translate'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.lang3.time'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.lang3.tuple'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.team.core)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.team.core; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.core.runtime)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.core.runtime; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.core.filesystem)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.core.filesystem; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.core.resources)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.core.resources; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.core.filebuffers)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.core.filebuffers; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.equinox.security)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.equinox.security; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.core.databinding)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.core.databinding; 0.0.0
+    </require>
+    <require extend='false' filter='(|(ee=J2SE-1.5))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=J2SE-1.5))
+    </require>
+  </resource>
+  <resource id='com.perforce.team.help.ui/2012.1.470464' presentationname='Perforce Team Provider Help' symbolicname='com.perforce.team.help.ui' uri='com.perforce.team.help.ui_2012.1.470464/com.perforce.team.help.ui_2012.1.470464.jar' version='2012.1.470464'>
+    <size>
+      623327
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Perforce Team Provider Help'/>
+      <p n='symbolicname' v='com.perforce.team.help.ui'/>
+      <p n='version' t='version' v='2012.1.470464'/>
+    </capability>
+  </resource>
+  <resource id='com.perforce.team.ui/2012.1.470464' presentationname='Perforce Team Provider UI' symbolicname='com.perforce.team.ui' uri='com.perforce.team.ui_2012.1.470464/com.perforce.team.ui_2012.1.470464.jar' version='2012.1.470464'>
+    <size>
+      2386959
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Perforce Team Provider UI'/>
+      <p n='symbolicname' v='com.perforce.team.ui'/>
+      <p n='version' t='version' v='2012.1.470464'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.actions'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.branches'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.changelists'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.connection'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.decorator'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.dialogs'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.diff'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.editor'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.history'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.jobs'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.labels'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.markers'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.p4java.actions'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.p4java.dialogs'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.p4merge'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.p4v'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.pending'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.preferences'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.preferences.decorators'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.project'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.refactor'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.resource'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.server'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.shelve'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.streams'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.submitted'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.synchronize'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.timelapse'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.viewer'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.views'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.zip'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(symbolicname=com.perforce.p4api)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle com.perforce.p4api; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=com.perforce.team.core)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle com.perforce.team.core; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.core.runtime)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.core.runtime; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.core.resources)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.core.resources; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.compare)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.compare; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.team.core)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.team.core; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.team.ui)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.team.ui; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.jface.text)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.jface.text; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.ui.workbench.texteditor)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.ui.workbench.texteditor; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.ui)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.ui; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.ui.ide)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.ui.ide; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.ui.editors)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.ui.editors; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.ui.views)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.ui.views; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.ui.forms)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.ui.forms; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.core.databinding)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.core.databinding; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.jface.databinding)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.jface.databinding; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.core.expressions)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.core.expressions; 0.0.0
+    </require>
+    <require extend='false' filter='(|(ee=J2SE-1.5))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=J2SE-1.5))
+    </require>
+  </resource>
+  <resource id='com.perforce.team.ui.text/2012.1.470464' presentationname='Perforce Team Provider UI Text' symbolicname='com.perforce.team.ui.text' uri='com.perforce.team.ui.text_2012.1.470464/com.perforce.team.ui.text_2012.1.470464.jar' version='2012.1.470464'>
+    <size>
+      158445
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Perforce Team Provider UI Text'/>
+      <p n='symbolicname' v='com.perforce.team.ui.text'/>
+      <p n='version' t='version' v='2012.1.470464'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.text'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.text.timelapse'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.perforce.team.ui.text.timelapse.form'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.ui)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.ui; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.core.runtime)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.core.runtime; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=com.perforce.team.ui)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle com.perforce.team.ui; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.ui.editors)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.ui.editors; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.jface.text)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.jface.text; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=com.perforce.team.core)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle com.perforce.team.core; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.ui.ide)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.ui.ide; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.core.resources)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.core.resources; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.team.core)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.team.core; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.ui.forms)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.ui.forms; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.ui.views)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.ui.views; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=org.eclipse.ui.workbench.texteditor)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle org.eclipse.ui.workbench.texteditor; 0.0.0
+    </require>
+    <require extend='false' filter='(|(ee=J2SE-1.5))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=J2SE-1.5))
+    </require>
+  </resource>
+</repository>
