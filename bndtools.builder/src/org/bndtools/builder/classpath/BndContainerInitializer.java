@@ -288,7 +288,7 @@ public class BndContainerInitializer extends ClasspathContainerInitializer imple
                         }
                     } else {
                         IAccessRule[] accessRules = calculateRepoBundleAccessRules(c);
-                        cpe = JavaCore.newLibraryEntry(p, null, null, accessRules, null, false);
+                        cpe = JavaCore.newLibraryEntry(p, null, null, accessRules, null, true);
                     }
                     if (cpe != null) {
                         result.add(cpe);
