@@ -213,21 +213,23 @@ public class BndContainerInitializer extends ClasspathContainerInitializer imple
             }
         }
         // DEBUG
-        StringBuilder s = new StringBuilder();
-        s.append("Project: " + project.getName() + "\n");
-        for(Project p : projectAccessRules.keySet()) {
-            List<IAccessRule> l = projectAccessRules.get(p);
-            s.append(" -- Project -- " + p.getName() + "\n");
-            if (l != null) {
-                for(IAccessRule j : l) {
-                    s.append("  " + j.toString() + "\n");
+        if (Boolean.parseBoolean(model.getProperty("accessrulesdebug", "false"))) {
+            StringBuilder s = new StringBuilder();
+            s.append("Project: " + project.getName() + "\n");
+            for(Project p : projectAccessRules.keySet()) {
+                List<IAccessRule> l = projectAccessRules.get(p);
+                s.append(" -- Project -- " + p.getName() + "\n");
+                if (l != null) {
+                    for(IAccessRule j : l) {
+                        s.append("  " + j.toString() + "\n");
+                    }
+                } else {
+                    s.append(" NULL -- STRANGE -- WHY???\n");
                 }
-            } else {
-                s.append(" NULL -- STRANGE -- WHY???\n");
             }
+            //errors.add(s.toString());
+            System.out.println(s.toString());
         }
-        //errors.add(s.toString());
-        System.out.println(s.toString());
 
         for (Container c : containers) {
             IClasspathEntry cpe = null;
